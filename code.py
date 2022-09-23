@@ -5,7 +5,7 @@ import analogio
 from adafruit_motor import stepper
 from adafruit_motorkit import MotorKit
 
-#Led de la placa
+#Led
 ledBlanco = DigitalInOut(board.GP13)
 ledBlanco.direction = Direction.OUTPUT
 
@@ -32,7 +32,7 @@ def obtener_voltaje(pin):
 
 
 # Stepper motor setup
-DELAY = 0.01  # fastest is ~ 0.004, 0.01 is still very smooth, gets steppy after that
+DELAY = 0.01  # el más rápido es 0.004, 0.01 sigue siendo muy suave, se vuelve paso a paso después de eso
 STEPS = 64  # con 513 pasos da una vuelta completa
 
 coils = (
